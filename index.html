@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WheelsOnTheGo - Car Rentals</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">WheelsOnTheGo</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <label for="searchInput">Search Cars...</label>
+      <input type="text" placeholder="Search Cars..." id="searchInput">
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Rent the Perfect Car for Your Needs</h1>
+      <p>WheelsOnTheGo offers a wide variety of vehicles to suit your travel style and budget. From fuel-efficient compacts to spacious SUVs, we have the car for you.</p>
+      <div class="car-showcase">
+        <img src="images/car1.jpg" alt="Car Image 1">
+        <img src="images/car2.jpg" alt="Car Image 2">
+        <img src="images/car3.jpg" alt="Car Image 3">
+      </div>
+    </section>
+
+    <section id="cars">
+      <h2>Explore Our Fleet</h2>
+      <div class="filter-bar">
+        <label for="filterPrice">Filter by Price:</label>
+        <select id="filterPrice">
+          <option value="all">All Prices</option>
+          <option value="budget">Budget-Friendly</option>
+          <option value="luxury">Luxury</option>
+        </select>
+      </div>
+      <div class="car-grid" id="carList">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About WheelsOnTheGo</h2>
+      <p>
+        WheelsOnTheGo is your one-stop shop for convenient and affordable car rentals. We're committed to providing a hassle-free rental experience with exceptional customer service. Here's why you should choose us:
+      </p>
+      <ul>
+        <li>Wide selection of well-maintained vehicles</li>
+        <li>Competitive rates and transparent pricing</li>
+        <li>Easy online booking and management system</li>
+        <li>24/7 roadside assistance for peace of mind</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have any questions or need help with your reservation? Feel free to contact us using the form below, or call us at (555) 555-5555.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5"></textarea>
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 WheelsOnTheGo. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
